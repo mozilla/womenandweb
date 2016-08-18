@@ -5,21 +5,21 @@ let pathToRepo = require(`path`).resolve(`.`);
 let getStatus = (repo) => repo.getStatus();
 
 let runDeploy = () => {
+  if(process.env.TRAVIS_PULL_REQUEST) {
+    shell.echo(`Skipping deployment for pull request!`);
+    return;
+  }
+
   shell.echo(`Running deployment now...`);
 
-  shell.exec(`git checkout master`);
-  shell.exec(`git pull origin master`);
+  shell.exec(`git stash`);
+  shell.exec(`git fetch origin master:master`)
+  shell.exec(`git checkout --orphan gh-pages master`);
 
-  shell.rm(`-rf`,`node_modules`);
-
-  shell.exec(`npm i`);
   shell.exec(`npm run build`);
 
   shell.echo(`${new Date}\n\n\n`).to(`last-built.txt`);
   shell.exec(`git log -n 1 >> last-built.txt`);
-
-  shell.exec(`git branch -D gh-pages`);
-  shell.exec(`git checkout --orphan gh-pages`);
 
   shell.rm(`.gitignore`);
 
@@ -33,8 +33,8 @@ let runDeploy = () => {
 
   shell.exec(`git reset`);
   shell.exec(`git add .`);
-  shell.exec(`git commit -m 'deploy.js-ified'`);
-  shell.exec(`git push origin gh-pages -f`);
+  shell.exec(`git commit -m 'Deployed via Travis'`);
+  shell.exec(`git push -f https://${process.env.GH_TOKEN}@github.com/mozilla/womenandweb.git gh-pages:gh-pages`);
 
   shell.echo(`Finished deploying!`);
 };
