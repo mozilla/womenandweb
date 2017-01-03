@@ -367,9 +367,48 @@ header {
   }
 }
 
-footer {
-  margin-top: 4rem;
+.section-sponsors {
+  padding: 1.2rem 0;
+  text-align: center;
+
+  h4 {
+    display: inline-block;
+    margin: 0 1.2rem 0 0;
+    font-size: 1.8rem;
+    font-weight: 300;
+    position: relative;
+    top: 8px;
+  }
+
+  a {
+    display: inline-block;
+    transition: opacity .1s ease-out;
+
+    &:hover {
+      opacity: .7;
+    }
+
+    img {
+      max-width: 250px;
+    }
+  }
 }
+
+@media screen and (max-width: $bp-md) {
+  .section-sponsors {
+    margin-top: 2rem;
+
+    h4 {
+      display: block;
+      margin: 0 0 .75rem 0;
+    }
+
+    img {
+      max-width: 70%;
+    }
+  }
+}
+
 
 .mofooter {
   background: #4d4f53;
@@ -521,8 +560,7 @@ footer {
     width: 100%;
 
     img {
-      max-height: 6rem;
-      max-width: 85%;
+      max-width: 70%;
       vertical-align: middle;
 
       &.logo-itu {
