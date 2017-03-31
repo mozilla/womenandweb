@@ -1,6 +1,7 @@
 #### Case Studies
 
 - [Creating Safe Spaces and Running Trainings at a Mozilla Club for Women in Mexico](https://medium.com/@TedeFrambuesa/how-to-create-safe-spaces-for-women-in-m%C3%A9xico-1dd0d240402a)
+- [Ca.pture: a youth-led digital storytelling project on cyberbullying](http://hivetoronto.org/ca-pture-youth-led-digital-storytelling-project-cyberbullying-launches/)
 - [Mozilla Club for women in Gambia](https://thimbleprojects.org/angelj123/99128/)
 - [Mozilla Club for Women Training Report from Cape Town](https://thimbleprojects.org/amira/72705/)
 - [Mozilla Club for Women Training Report from Nairobi](https://thimbleprojects.org/amira/66191/)
