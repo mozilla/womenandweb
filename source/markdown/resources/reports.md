@@ -1,6 +1,6 @@
 #### Reports
 
-- [Developing a Learning Platform for Women](https://medium.com/read-write-participate/case-study-developing-a-learning-platform-for-women-afa4d2096bc#.yind84k3g) 
-- Women and Web Literacy Research Paper *(coming soon)*
-- Women and Web Literacy Report *(coming soon)*
-- Cyberviolence Research Paper *(coming soon)*
+- [Developing a Learning Platform for Women](https://medium.com/read-write-participate/case-study-developing-a-learning-platform-for-women-afa4d2096bc#.yind84k3g)
+- [Digital Skills Observatory Research Report](https://d20x8vt12bnfa2.cloudfront.net/reports/Stepping+Into+Digital+Life+-+Digital+Skills+Observatory+Research+Report.pdf)
+- Women and the Web Research Paper *(coming soon)*
+- Why Women and Web Literacy Report *(coming soon)*
