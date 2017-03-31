@@ -39,7 +39,7 @@
     "shx": "^0.1.2"
   },
   "dependencies": {
-    "mofo-bootstrap": "^1.0.1"
+    "mofo-bootstrap": "^3.2.0"
   },
   "pugLintConfig": {
     "disallowHtmlText": true,
